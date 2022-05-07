@@ -1,0 +1,267 @@
+
+/* General */
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color: #444444;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
+
+/* Section General*/
+
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f7fbfe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+/* Header */
+
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+#header-searchbar {
+  margin: 30px 0px 0px 30px;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+/* Navigation */
+
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5a62;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+/* Banner Section */
+
+#banner {
+  width: 100%;
+  height: 65vh;
+  background: url("../img/wheat-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#banner:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#banner .container {
+  z-index: 2;
+}
+#banner h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#banner h1 span {
+  border-bottom: 4px solid #3498db;
+}
+#banner h2 {
+  color: #735440;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+#banner .btn-get-started {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+}
+#banner .btn-get-started:hover {
+  background: #4ea5e0;
+}
+@media (max-width: 992px) {
+  #banner {
+    height: calc(100vh - 70px);
+  }
+}
+@media (max-width: 768px) {
+  #banner h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #banner h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Products */
+
+.products {
+  background: white;
+  padding: 30px 0 40px 0;
+}
+.products .product-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+.products .product-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: #3498db;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.products .product-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #124364;
+}
+.products .product-box p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* About us*/
+
+.about {
+  padding: 10px 0;
+}
+.about h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+/* Activities */
+
+.activities .icon-box {
+  text-align: center;
+  padding: 30px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.activities .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #eaf4fb;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+.activities .icon-box .icon i {
+  color: #3498db;
+  font-size: 28px;
+}
+.activities .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.activities .icon-box h4 a {
+  color: #384046;
+  transition: ease-in-out 0.3s;
+}
+.activities .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.activities .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+.activities .icon-box:hover h4 a, .activities .icon-box:hover .icon i {
+  color: #3498db;
+}
+
+/* Footer */
+
