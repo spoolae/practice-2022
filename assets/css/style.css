@@ -17,9 +17,18 @@ a:hover {
   color: #57984C;
   font-size: smaller;
 }
-
 #margin-bot-80{
   margin-bottom: 80px;
+}
+#margin-vertical-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.text-color-green{
+  color:#57984C;
+}
+.text-color-red{
+  color:#CF2333;
 }
 
 /* Section General*/
@@ -319,6 +328,30 @@ section {
   background: url("../img/tomatoes/8.png") center center;
   background-size:contain;
   background-repeat: no-repeat;
+}
+
+/* Tomato One */
+
+.tomato-one{
+  margin-top:20px;
+}
+.tomato-one h2,h3{
+  font-weight: 700;
+}
+.tomato-one #back-button{
+  color:#57984C;
+  margin-bottom: 10px;
+}
+.tomato-icon-text{
+  display: inline-block;
+}
+.tomato-green-underlined{
+  color:#57984C;
+  border-bottom: 3px solid #57984C;
+  width: 50%;
+}
+.download-button{
+float: right;
 }
 
 /* Footer */
