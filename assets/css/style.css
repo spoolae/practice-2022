@@ -127,6 +127,15 @@ section {
   position: relative;
   margin-top: 70px;
 }
+#field-banner {
+  width: 100%;
+  height: 45vh;
+  background: url("../img/field-bg.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 70px;
+}
 #banner:before {
   content: "";
   background: rgba(0, 0, 0, 0.15);
@@ -225,10 +234,46 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #E5E5E5;
- 
 }
 .about-tomato{
   background-color: #EDEDED;
+}
+.about-tomato #input-label{
+  margin-top: 15px;
+  font-size: large;
+}
+.about-tomato #input-box{
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border-color: white;
+}
+.about-tomato #input-box-large{
+  height: 430px;
+  width: 400px;
+  border-radius: 5px;
+  border-color: white;
+}
+.about-tomato #input-box-short{
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  border-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-tomato #input-box-long{
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border-color: white;
+}
+.about-tomato #send-button{
+  padding:10px;
+  border-radius: 15px;
+  color:white;
+  background-color: #57984C;
+
 }
 #hint{
   border-left: 3px solid #EB5757;
@@ -349,6 +394,10 @@ section {
   color:#57984C;
   border-bottom: 3px solid #57984C;
   width: 50%;
+}
+.contact-green-underlined{
+  color:#57984C;
+  border-bottom: 3px solid #57984C;
 }
 .download-button{
 float: right;
