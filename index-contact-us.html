@@ -25,13 +25,18 @@
       crossorigin="anonymous"
     />
 
+    <!-- Icons  -->
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--Header-->
-
+    <!-- Header -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
         <div class="logo me-auto">
@@ -50,14 +55,18 @@
             <li><a href="">R&D</a></li>
             <li><a href="index-contact-us.html">Contact</a></li>
           </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+        <!-- .navbar -->
 
-        <div class="form-group mb-4">
-          <input
-            id="header-searchbar"
-            placeholder="Search"
-            class="form-control form-control-underlined"
-          />
+        <div class="header-social-links d-flex align-items-center">
+          <div class="form-group mb-4">
+            <input
+              id="header-searchbar"
+              placeholder="Search"
+              class="form-control form-control-underlined"
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -72,55 +81,61 @@
     <!-- Contact Us Section -->
 
     <section id="about" class="about-tomato">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-8">
-          <h3>Contact Us</h3>
-          <h5 class="x-marks">×××××</h5>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8">
+            <h3>Contact Us</h3>
+            <h5 class="x-marks">×××××</h5>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-4">
-          <p id="input-label">Name*</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">Company Name</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">Position</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">City</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">Country</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">Telephone</p>
-          <input id="input-box" type="text" />
-          <p id="input-label">Email*</p>
-          <input id="input-box" type="text" />
-        </div>
-        <div class="col-lg-4">
-          <p id="input-label">If other, please specify</p>
-          <input id="input-box-long" type="text" value="seed producer" />
-          <p id="input-label">You are interested in</p>
-          <textarea id="input-box-large"></textarea>
-          <p id="input-label">Please type this code</p>
-          <div>
-            <image src="assets/img/capcha.png" />
-            <input id="input-box-short" type="text" />
-            <a href="">
-              <label id="send-button">Send Message</label>
-            </a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <p id="input-label">Name*</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">Company Name</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">Position</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">City</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">Country</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">Telephone</p>
+            <input id="input-box" type="text" />
+            <p id="input-label">Email*</p>
+            <input id="input-box" type="text" />
+          </div>
+          <div class="col-lg-4">
+            <p id="input-label">If other, please specify</p>
+            <input id="input-box-long" type="text" value="seed producer" />
+            <p id="input-label">You are interested in</p>
+            <textarea id="input-box-large"></textarea>
+            <p id="input-label">Please type this code</p>
+            <div>
+              <image src="assets/img/capcha.png" />
+              <input id="input-box-short" type="text" />
+              <a href="">
+                <label id="send-button">Send Message</label>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-3">
-          <h4 class="contact-green-underlined">Our Address</h4>
-          <div>AGRIDERA Seeds & Agriculture Ltd.</div>
-          <div>P.O Box 103,</div>
-          <div>Gedera 70750, Israel.</div>
-          <div>
-            Telephone:
-            <label class="text-color-green">+972 8 944 9222</label>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-3">
+            <h4 class="contact-green-underlined">Our Address</h4>
+            <div>AGRIDERA Seeds & Agriculture Ltd.</div>
+            <div>P.O Box 103,</div>
+            <div>Gedera 70750, Israel.</div>
+            <div>
+              Telephone:
+              <label class="text-color-green">+972 8 944 9222</label>
+            </div>
           </div>
         </div>
       </div>
@@ -162,5 +177,8 @@
         <div id="footer-bot">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
       </div>
     </footer>
+
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
