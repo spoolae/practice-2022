@@ -25,13 +25,18 @@
       crossorigin="anonymous"
     />
 
+    <!-- Icons  -->
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--Header-->
-
+    <!-- Header -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
         <div class="logo me-auto">
@@ -45,19 +50,31 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="">Company</a></li>
             <li><a href="">Profile</a></li>
-            <li><a href="index-tomato-all.html">Products</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Products</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="index-tomato-all.html">Tomato All</a></li>
+
+                <li><a href="index-tomato-one.html">Tomato One</a></li>
+              </ul>
+            </li>
             <li><a href="">Services</a></li>
             <li><a href="">R&D</a></li>
             <li><a href="index-contact-us.html">Contact</a></li>
           </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <div class="form-group mb-4">
-          <input
-            id="header-searchbar"
-            placeholder="Search"
-            class="form-control form-control-underlined"
-          />
+        <div class="header-social-links d-flex align-items-center">
+          <div class="form-group mb-4">
+            <input
+              id="header-searchbar"
+              placeholder="Search"
+              class="form-control form-control-underlined"
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -79,7 +96,7 @@
     <section id="products" class="products">
       <div class="container">
         <div class="row">
-          <div class="col-lg col-3">
+          <div id="margin-vertical-20" class="col-lg col-3">
             <div class="product-box">
               <img
                 src="assets/img/products/wheat.png"
@@ -89,7 +106,7 @@
               <p>Wheat</p>
             </div>
           </div>
-          <div class="col-lg col-3">
+          <div id="margin-vertical-20" class="col-lg col-3">
             <div class="product-box">
               <img
                 src="assets/img/products/watermelon.png"
@@ -99,7 +116,7 @@
               <p>Confection Watermelon</p>
             </div>
           </div>
-          <div class="col-lg col-3">
+          <div id="margin-vertical-20" class="col-lg col-3">
             <div class="product-box">
               <img
                 src="assets/img/products/clover.png"
@@ -109,7 +126,7 @@
               <p>Clover</p>
             </div>
           </div>
-          <div class="col-lg col-3">
+          <div id="margin-vertical-20" class="col-lg col-3">
             <div class="product-box">
               <img
                 src="assets/img/products/sunflower.png"
@@ -119,7 +136,7 @@
               <p>Confection Sunflower</p>
             </div>
           </div>
-          <div class="col-lg col-4">
+          <div id="margin-vertical-20" class="col-lg col-4">
             <div class="product-box">
               <img
                 src="assets/img/products/tomato.png"
@@ -129,7 +146,7 @@
               <p>Tomato</p>
             </div>
           </div>
-          <div class="col-lg col-4">
+          <div id="margin-vertical-20" class="col-lg col-4">
             <div class="product-box">
               <img
                 src="assets/img/products/eggplant.png"
@@ -139,7 +156,7 @@
               <p>Eggplant P/O</p>
             </div>
           </div>
-          <div class="col-lg col-4">
+          <div id="margin-vertical-20" class="col-lg col-4">
             <div class="product-box">
               <img
                 src="assets/img/products/sunflower-part.png"
@@ -159,7 +176,7 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-4">
-            <h3>Vision</h3>
+            <h3 id="margin-vertical-20">Vision</h3>
             <h5 class="x-marks">×××××</h5>
             <p>
               We believe in long-term growth with an emphasis on the potential
@@ -183,7 +200,7 @@
             allowfullscreen
           ></iframe>
           <div class="col-lg-4">
-            <h3>Mission</h3>
+            <h3 id="margin-vertical-20">Mission</h3>
             <h5 class="x-marks">×××××</h5>
             <p>
               Breeding and marketing seeds for advanced field crops and
@@ -199,64 +216,50 @@
 
     <section id="activities" class="activities">
       <div class="container">
-        <div class="section-title">
-          <h2>Agridera's main activities</h2>
-          <h5 class="x-marks">×××××</h5>
-        </div>
+        <div class="container">
+          <div class="section-title">
+            <h2>Agridera's main activities</h2>
+            <h5 class="x-marks">×××××</h5>
+          </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-4">
-            <img src="assets/img/a-seed.png" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-3 col-4">
-            <img src="assets/img/a-tomato.png" class="img-fluid" alt="" />
-          </div>
-          <div class="col-lg-3 col-4">
-            <img src="assets/img/a-sunflower.png" class="img-fluid" alt="" />
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <h4 class="activity-name border-bottom border-success">
-                Open field crop seeds
-              </h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <h4 class="activity-name border-bottom border-success">
-                Vegetable seeds
-              </h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <h4 class="activity-name border-bottom border-success">
-                Ornamental seeds
-              </h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <p>wheat, cotton, legumes, hybrid confection sunflower</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <p>hybrid open field tomatoes, eggplant, onion, paprika, etc.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-4">
-            <div class="text-center">
-              <p>
-                hybrid cut sunflowers, hybrid patio tomatoes, Bells of Irland,
-                etc.
-              </p>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-12">
+                <img src="assets/img/a-seed.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h4 class="activity-name border-bottom border-success">
+                    Open field crop seeds
+                  </h4>
+                  <p>wheat, cotton, legumes, hybrid confection sunflower</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12">
+                <img src="assets/img/a-tomato.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h4 class="activity-name border-bottom border-success">
+                    Vegetable seeds
+                  </h4>
+                  <p>
+                    hybrid open field tomatoes, eggplant, onion, paprika, etc.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12">
+                <img
+                  src="assets/img/a-sunflower.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="text-center">
+                  <h4 class="activity-name border-bottom border-success">
+                    Ornamental seeds
+                  </h4>
+                  <p>
+                    hybrid cut sunflowers, hybrid patio tomatoes, Bells of
+                    Irland, etc.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -299,5 +302,7 @@
         <div id="footer-bot">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
       </div>
     </footer>
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

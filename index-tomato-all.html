@@ -25,13 +25,18 @@
       crossorigin="anonymous"
     />
 
+    <!-- Icons  -->
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--Header-->
-
+    <!-- Header -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
         <div class="logo me-auto">
@@ -45,19 +50,31 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="">Company</a></li>
             <li><a href="">Profile</a></li>
-            <li><a href="index-tomato-all.html">Products</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Products</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="index-tomato-all.html">Tomato All</a></li>
+
+                <li><a href="index-tomato-one.html">Tomato One</a></li>
+              </ul>
+            </li>
             <li><a href="">Services</a></li>
             <li><a href="">R&D</a></li>
             <li><a href="index-contact-us.html">Contact</a></li>
           </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <div class="form-group mb-4">
-          <input
-            id="header-searchbar"
-            placeholder="Search"
-            class="form-control form-control-underlined"
-          />
+        <div class="header-social-links d-flex align-items-center">
+          <div class="form-group mb-4">
+            <input
+              id="header-searchbar"
+              placeholder="Search"
+              class="form-control form-control-underlined"
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -72,41 +89,43 @@
     <!-- About Tomato -->
 
     <section id="about" class="about-tomato">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-9">
-          <h3>Agridera Fresh Market Tomato Hybrids</h3>
-          <h5 class="x-marks">×××××</h5>
-          <p>
-            Agridera aims to be one of the world's leading companies in the
-            breeding, production, and marketing of tomato seeds.
-            <strong>
-              We invest intensively in research and development to provide
-              solutions to growers and consumers in numerous countries around
-              the world.
-            </strong>
-            In particular, we breed improved disease-resistant cultivars adapted
-            to different markets globally.
-          </p>
-          <p>
-            Currently, emphasis is placed on combining Tomato Yellow Leaf Curl
-            Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances with
-            other soil borne diseases into superior tomato breeding lines and
-            hybrids. Moreover, comprehensive efforts are being undertaken to
-            develop varieties resistance to TBRFV virus (Tomato Brown Rugose
-            Fruit Virus).
-          </p>
-          <p>
-            In terms of horticultural traits, breeding is for earliness,
-            different fruit sizes, firmness, red fruit color, flavor, crack
-            resistance, shelf life, and high/low temperature fruit set.
-            Combinations of quality features and disease resistance are sought
-            in a variety of types, namely round and elongated shapes.
-          </p>
-          <p id="hint">
-            Agirdera Tomato breeding programs are focusing on three main
-            segments: Greenhouse Indeterminate Tomatoes, Open-field
-            Indeterminate Tomatoes, and Bush Type Open-field Tomatoes.
-          </p>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9">
+            <h3>Agridera Fresh Market Tomato Hybrids</h3>
+            <h5 class="x-marks">×××××</h5>
+            <p>
+              Agridera aims to be one of the world's leading companies in the
+              breeding, production, and marketing of tomato seeds.
+              <strong>
+                We invest intensively in research and development to provide
+                solutions to growers and consumers in numerous countries around
+                the world.
+              </strong>
+              In particular, we breed improved disease-resistant cultivars
+              adapted to different markets globally.
+            </p>
+            <p>
+              Currently, emphasis is placed on combining Tomato Yellow Leaf Curl
+              Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances
+              with other soil borne diseases into superior tomato breeding lines
+              and hybrids. Moreover, comprehensive efforts are being undertaken
+              to develop varieties resistance to TBRFV virus (Tomato Brown
+              Rugose Fruit Virus).
+            </p>
+            <p>
+              In terms of horticultural traits, breeding is for earliness,
+              different fruit sizes, firmness, red fruit color, flavor, crack
+              resistance, shelf life, and high/low temperature fruit set.
+              Combinations of quality features and disease resistance are sought
+              in a variety of types, namely round and elongated shapes.
+            </p>
+            <p id="hint">
+              Agirdera Tomato breeding programs are focusing on three main
+              segments: Greenhouse Indeterminate Tomatoes, Open-field
+              Indeterminate Tomatoes, and Bush Type Open-field Tomatoes.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -114,61 +133,49 @@
     <!-- Tomato Columns -->
 
     <section id="tomato-columns" class="tomato-columns">
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <h4>Greenhouse Tomato Breeding Program</h4>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-12">
+            <div class="">
+              <h4>Greenhouse Tomato Breeding Program</h4>
+              <p class="border-top border-dark">
+                <strong>
+                  This breeding is aimed for the Spanish and Turkish markets.
+                </strong>
+                For single and cluster picks, round fruit shape and resistances
+                of TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp.
+                radicis-lycopersici). Some hybrids may include more resistances,
+                such as Cladosporium and Leveillula Taurica (Lv).
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <h4>Open-field Indeterminate Tomatoes</h4>
+          <div class="col-lg-3 col-12">
+            <div class="">
+              <h4>Open-field Indeterminate Tomatoes</h4>
+              <p class="border-top border-dark">
+                <strong>
+                  This breeding is for Brazilian, Moroccan, and Turkish markets.
+                </strong>
+                The main focus is on large round shape fruits (200 grams plus);
+                and resistances of TYLCV, TSWV, Nematodes and FORL. In the near
+                future, F3 (Fusarium oxysporum f.sp. lycopersici) will be
+                included as basic resistance in our cultivars.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <h4>Open-field Bush Type Tomatoes</h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <p class="border-top border-dark">
-              <strong>
-                This breeding is aimed for the Spanish and Turkish markets.
-              </strong>
-              For single and cluster picks, round fruit shape and resistances of
-              TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp.
-              radicis-lycopersici). Some hybrids may include more resistances,
-              such as Cladosporium and Leveillula Taurica (Lv).
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <p class="border-top border-dark">
-              <strong>
-                This breeding is for Brazilian, Moroccan, and Turkish markets.
-              </strong>
-              The main focus is on large round shape fruits (200 grams plus);
-              and resistances of TYLCV, TSWV, Nematodes and FORL. In the near
-              future, F3 (Fusarium oxysporum f.sp. lycopersici) will be included
-              as basic resistance in our cultivars.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div class="">
-            <p class="border-top border-dark">
-              <strong> This breeding is for Mediterranean markets. </strong>
-              We breed round and elongated shapes, standard sizes (140- 180
-              grams), and beef sizes (min. 180 grams up to 300 grams and more).
-              We combine the resistances of TYLCV, TSWV and Nematodes as basic
-              resistances in our hybrids. However, some hybrids may include more
-              resistances, such as Cladosporium and Leveillula Taurica (Lv).
-            </p>
+          <div class="col-lg-3 col-12">
+            <div class="">
+              <h4>Open-field Bush Type Tomatoes</h4>
+              <p class="border-top border-dark">
+                <strong> This breeding is for Mediterranean markets. </strong>
+                We breed round and elongated shapes, standard sizes (140- 180
+                grams), and beef sizes (min. 180 grams up to 300 grams and
+                more). We combine the resistances of TYLCV, TSWV and Nematodes
+                as basic resistances in our hybrids. However, some hybrids may
+                include more resistances, such as Cladosporium and Leveillula
+                Taurica (Lv).
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -177,81 +184,99 @@
     <!-- Tomatoes -->
 
     <section id="tomatoes" class="tomatoes">
-      <div id="margin-bot-80" class="row justify-content-center">
-        <strong id="hint" class="col-lg-9"
-          >Agridera operates through international and local distributers around
-          the world.
-        </strong>
-      </div>
+      <div class="container">
+        <div id="margin-bot-80" class="row justify-content-center">
+          <strong id="hint" class="col-lg-9"
+            >Agridera operates through international and local distributers
+            around the world.
+          </strong>
+        </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-1" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1000 (TAG 853)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-1" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1000 (TAG 853)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-2" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1001 (TAG 855)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-3" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1002 (TAG 809)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-2" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1001 (TAG 855)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-3" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1002 (TAG 809)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-4" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1003 (TAG 834 )</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-4" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1003 (TAG 834 )</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-5" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1004 (TAG 848)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-6" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1005 (TAG 800)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-5" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1004 (TAG 848)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-6" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1005 (TAG 800)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-7" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1006 (TAG 898)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-7" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1006 (TAG 898)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-4">
-          <div id="tomato-cover-8" class="tomato-cover">
-            <div class="tomato-text-block">
-              <h4 class="text-center">TAG 1007 (TAG 816)</h4>
-              <h5 class="text-center">Tomato Determinate Red Standard Round</h5>
+          <div class="col-lg-3 col-12">
+            <div id="tomato-cover-8" class="tomato-cover">
+              <div class="tomato-text-block">
+                <h4 class="text-center">TAG 1007 (TAG 816)</h4>
+                <h5 class="text-center">
+                  Tomato Determinate Red Standard Round
+                </h5>
+              </div>
             </div>
           </div>
         </div>
@@ -294,5 +319,7 @@
         <div id="footer-bot">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
       </div>
     </footer>
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
