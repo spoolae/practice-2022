@@ -288,6 +288,7 @@ section {
   background-color: #57984C;
   margin-top:15px;
   margin-bottom:15px;
+  border-width: 0px;
 }
 #hint{
   border-left: 3px solid #EB5757;
@@ -425,9 +426,9 @@ section {
   color:#57984C;
   border-bottom: 3px solid #57984C;
 }
-.download-button{
-float: right;
-}
+/* .download-button{
+  float: right;
+} */
 
 /* Footer */
 

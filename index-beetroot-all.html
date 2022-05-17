@@ -60,7 +60,7 @@
               <ul>
                 <li><a href="index-beetroot-all.html">Beetroot All</a></li>
 
-                <li><a href="index-tomato-one.html">Tomato One</a></li>
+                <li><a href="index-beetroot-one.html#1">Beetroot One</a></li>
               </ul>
             </li>
             <li><a href="">Services</a></li>
@@ -81,7 +81,6 @@
         </div>
       </div>
     </header>
-
     <!-- Banner Beetroot -->
 
     <section
@@ -210,14 +209,16 @@
                 v-for="product in products"
                 :key="product.title"
               >
-                <img
-                  :src="'assets/img/beetroots/'+product.image"
-                  class="img-fluid"
-                  alt=""
-                />
-                <h4 id="margin-vertical-20" class="text-center">
-                  {{product.title}}
-                </h4>
+                <a :href="'index-beetroot-one.html#'+product.id">
+                  <img
+                    :src="'assets/img/beetroots/'+product.image"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <h4 id="margin-vertical-20" class="text-center">
+                    {{product.title}}
+                  </h4>
+                </a>
                 <h5 class="text-center">{{product.short_text}}</h5>
               </div>
             </div>
