@@ -37,6 +37,19 @@ new Vue ({
                 this.btnVisible=false;
             }
         },
+         removeAllFromCart: function(){
+            var cart = [];
+            if(window.localStorage.getItem('cart')){
+                cart = window.localStorage.getItem('cart').split(',');
+            }
+                cart.pop(0);
+                cart.pop(1);
+                cart.pop(2);
+                cart.pop(3);
+                cart.pop(4);
+                window.localStorage.setItem('cart', cart.join());
+     
+        },
         getProduct: function() {
             if(window.location.hash) {
                 var id = window.location.hash.replace("#", " ");
@@ -58,9 +71,8 @@ new Vue ({
         },
         makeOrder: function(){
             for(var i in this.products){
-                this.removeFromCart(i);
+                this.removeAllFromCart();
             }
-            console.log(this.contactFields);
             this.fieldsVisible=false;
         }
       },
